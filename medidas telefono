@@ -1,0 +1,31 @@
+Dimensiones del iPhone 13 Pro:
+Resolución de pantalla: 1170 x 2532 píxeles.
+Tamaño de la pantalla: 6.1 pulgadas (diagonal).
+Densidad de píxeles (PPI): 460 ppi (píxeles por pulgada).
+Consideraciones al calcular el tamaño de los elementos:
+Los tamaños en Flutter (o cualquier diseño adaptable) suelen calcularse en píxeles lógicos (o "logical pixels"), que son unidades independientes de la resolución del dispositivo, llamadas "puntos" o "dp". Flutter ajusta automáticamente las medidas según la densidad de la pantalla.
+
+Ahora, basándonos en el diseño de tu mockup y para un iPhone 13 Pro, te daré estimaciones de tamaño para los elementos principales.
+
+1. Barra superior (con el logo y el buscador):
+Altura aproximada: Debería tener entre 56 y 72 dp para ser lo suficientemente grande como para contener un logotipo y un campo de búsqueda.
+Ancho del logo: Aproximadamente 40 a 50 dp (manteniendo las proporciones para ser visible pero no demasiado grande).
+Campo de búsqueda: Debería ocupar entre 80-85% del ancho de la pantalla y una altura de alrededor de 40 dp.
+2. Lista de canciones (tarjetas de canción):
+Altura de cada tarjeta: Aproximadamente 90-100 dp para que cada canción tenga espacio suficiente para un título, un subtítulo y un botón "Play".
+Ancho de cada tarjeta: Generalmente, las tarjetas deberían ocupar un 90-95% del ancho de la pantalla para dejar un pequeño margen alrededor.
+3. Botón "Play" dentro de cada tarjeta:
+Tamaño del botón "Play": Aproximadamente 40 x 40 dp, lo suficiente para ser interactivo, pero sin ocupar demasiado espacio en la tarjeta.
+4. Imagen de la canción:
+Tamaño del círculo de imagen: Aproximadamente 50 x 50 dp para que sea lo suficientemente grande para ser identificable, pero manteniendo una proporción adecuada dentro de la tarjeta.
+5. Texto del título de la canción y del artista:
+Tamaño del título de la canción: Entre 16-18 dp para ser fácilmente legible.
+Tamaño del subtítulo (nombre del artista): Aproximadamente 14-16 dp, un poco más pequeño que el título principal.
+6. Barra inferior de navegación (con los íconos de navegación):
+Altura de la barra: Aproximadamente 60-72 dp para ser lo suficientemente accesible.
+Tamaño de los íconos: Entre 24-28 dp, lo que es común para botones de navegación en dispositivos móviles.
+Distribución general de la pantalla:
+Margen entre elementos: Es recomendable dejar márgenes de 8-12 dp entre las tarjetas, botones y otros elementos para un diseño que respire visualmente.
+Tamaño total de la pantalla: Flutter ajustará el diseño para el tamaño total de la pantalla (1170 x 2532 px en el iPhone 13 Pro), por lo que todos los valores mencionados estarán en proporciones de puntos lógicos, independientemente de la densidad.
+Ajustes responsivos:
+Padding y margenes responsivos: Asegúrate de utilizar EdgeInsets.symmetric o EdgeInsets.all con valores en dp para mantener proporciones uniformes en diferentes tamaños de pantallas.
